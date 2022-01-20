@@ -19,10 +19,10 @@ public class SpringEmailApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerMain() throws MessagingException {
-
-		emailSenderService.sendMailWithAttachment("laserarjun876@gmail.com",
+		emailSenderService.sendMail("arno.ahmed2546@gmail.com",
 				"This is email body",
-				"This is email subject","/Users/arjungautam/Downloads/resume.pdf");
+				"This is email subject");
+
 
 	}
 
